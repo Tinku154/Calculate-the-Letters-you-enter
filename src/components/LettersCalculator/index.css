@@ -1,0 +1,139 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #1d976c 0%, #93f9b9 107%);
+  height: 100vh;
+}
+
+.letters-calculator-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+@media screen and (min-width: 992px) {
+  .letters-calculator-container {
+    flex-direction: row;
+  }
+}
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .calculator-container {
+    align-items: flex-start;
+    order: 0;
+  }
+}
+
+.heading {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .heading {
+    text-align: start;
+    font-size: 40px;
+  }
+}
+
+.input-phrase-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.letters-input {
+  color: #ffffff;
+  background-color: transparent;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #e4e7eb;
+  border-radius: 4px;
+  margin-top: 8px;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .letters-input {
+    width: 350px;
+  }
+}
+
+.letters-count {
+  align-self: center;
+  color: #219a6f;
+  background-color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-top: 20px;
+  padding: 12px;
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+@media screen and (min-width: 992px) {
+  .letters-count {
+    align-self: start;
+    padding: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .letters-count {
+    padding: 18px;
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+}
+
+.letters-calculator-image {
+  width: 90%;
+  order: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .letters-calculator-image {
+    width: 500px;
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .letters-calculator-image {
+    width: 575px;
+  }
+}
